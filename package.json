@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "bot:dev": "cd api && npm install && npm run dev",
+    "deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
     "@types/node": "^24.3.0",
